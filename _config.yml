@@ -13,5 +13,5 @@ domain_name: 'https://edo.so'
 google_analytics: 'UA-57918031-1'
 
 # Details for the RSS feed generator
-url:            'http://edo.so'
+url:            'https://edo.so'
 author:         'Edoardo Biraghi'
