@@ -1,8 +1,8 @@
 name: edo
 description: development, startups and something else
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+meta_description: "development, startups and something else"
 
-gems: [jekyll-paginate, jekyll-gist]
+gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap]
 
 markdown: redcarpet
 highlighter: pygments
