@@ -18,7 +18,7 @@
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
-
+    <div id="onReady"></div>
     {{ content }}
     <footer class="site-footer clearfix">
       <section class="copyright">
@@ -56,6 +56,17 @@
              });
          }
       });
-    </script>   
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function(){$(".author h4").append("developer");}, 1000);
+        });
+
+        setTimeout(function(){
+            $(document).ready(function(){
+                $(".author h4").append(" and wizard");
+            });
+        }, 2000);
+    </script>
 </body>
 </html>
