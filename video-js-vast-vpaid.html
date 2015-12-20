@@ -1,0 +1,37 @@
+---
+layout: default
+title: Video.js - VAST / VPAID
+cover: false
+about: 'about.html'
+---
+
+<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.12/video.js"></script>
+<script src="http://mailonline.github.io/videojs-vast-vpaid/scripts/videojs-vast-vpaid.js"></script>
+<style>
+    #videoplayer {
+        margin: 45px auto;
+        border: 1px solid #eee;
+    }
+    .vjs-default-skin .vjs-big-play-button {
+        left: 40%;
+        top: 40%;
+    }
+</style>
+<video id="videoplayer" class="video-js vjs-default-skin"
+       controls preload="auto" width="640" height="360"
+       poster="http://static.oilproject.org/lesson/2294/cover/9c82c64cc06cb48e2091414c0cfc8980_large_.jpg?t=1450360458"
+       data-setup='{
+                  "plugins": {
+                          "vastClient":{
+                              "url": "http://oas.oilproject.org/RealMedia/ads/adstream_sx.ads/oilproject.org/dettaglio-video/1@x01",
+                              "adsCancelTimeout": 5000,
+                              "adsEnabled": true
+                          }
+                  }
+             }'>
+    <source src="http://video.oilproject.org/2294/2294.HQ.mp4" type="video/mp4" />
+    <source src="http://video.oilproject.org/2294/2294.HQ.webm" type="video/webm" />
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a
+            href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
